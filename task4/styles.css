@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Raleway:wght@400;700&display=swap");
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100vw;
+}
+
+img {
+  width: 90%;
+  height: auto;
+}
+
+a {
+  color: hsl(170, 45%, 43%);
+}
+
+.nav,
+footer,
+.card {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  padding: 50px 10vw;
+}
+
+.grid-container,
+.grid-container2 {
+  display: grid;
+  grid-template-areas: "content stock";
+  grid-template-columns: 1fr 1fr;
+}
+
+.section3 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.content {
+  grid-area: content;
+}
+
+.image {
+  grid-area: stock;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > span:nth-child(2) {
+  margin: 0 35px;
+}
+
+.curve {
+  position: relative;
+  top: 10px;
+}
+
+.section1 .caption {
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.section1 .email-section {
+  display: flex;
+}
+.section1 .email-section input {
+  width: 50%;
+  height: 35px;
+}
+.section1 .email-section button {
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  margin-left: 5%;
+  padding: 5px;
+}
+
+.section2 {
+  background-repeat: no-repeat;
+  background-color: hsl(240, 75%, 98%);
+}
+.section2 .content {
+  display: flex;
+  flex-direction: column;
+}
+.section2 .card {
+  background-color: white;
+  box-shadow: 9px 9px 5px 0px rgba(212, 208, 208, 0.75);
+  -webkit-box-shadow: 9px 9px 5px 0px rgba(212, 208, 208, 0.75);
+  -moz-box-shadow: 9px 9px 5px 0px rgba(212, 208, 208, 0.75);
+  padding: 40px;
+}
+
+.section2 .profile img {
+  width: auto;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.section3 {
+  background-color: hsl(238, 22%, 44%);
+  height: 30vh;
+}
+
+.section3 .content1,
+.section3 .content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section3 button {
+  height: 35px;
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+}
+
+.section2 img,
+.section3 img {
+  height: auto;
+  width: 100%;
+}
+
+.link-parent {
+  margin-top: 10px;
+}
+
+.link {
+  width: 180px;
+
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+
+.section3 .content {
+  color: white;
+}
+
+.section3 .content2 input {
+  width: 100%;
+  height: 35px;
+}
+
+.section3 button {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.card {
+  width: 60%;
+  color: hsl(238, 22%, 44%);
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.card .quotes {
+  height: 20px;
+  width: 20px;
+}
+
+.card .testimony {
+  line-height: 25px;
+}
+
+.card .details {
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.card .details .name {
+  font-weight: 700;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: hsl(243, 87%, 12%);
+  height: 30vh;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  /* grid-auto-rows: minmax(200px, 1fr); */
+}
+
+footer img {
+  width: inherit;
+}
+
+footer .col1 div img {
+  width: inherit;
+  height: 18px;
+  margin-right: 15px;
+}
+
+footer .col1 .phone,
+footer .col1 .email {
+  display: flex;
+}
+
+footer .col2,
+footer .col3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .col4 {
+  display: flex;
+  justify-content: center;
+}
+
+footer .col4 img {
+  height: 25px;
+}
+footer .col1 div,
+footer .col2 div,
+footer .col3 div,
+footer .col4 {
+  padding-bottom: 13px;
+}
+
+footer .phone {
+  margin-top: 20px;
+}
+
+.twitter {
+  margin: 0 20px;
+}
+@media screen and (max-width: 800px) {
+  .link-parent {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    padding: 15vw;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "stock stock" "content content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-areas: "content content" "stock stock";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .section1,
+  .section2 {
+    padding: 0 15vw;
+  }
+
+  .section1 {
+    height: 80vh;
+  }
+
+  .section1 .email-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 .email-section input {
+    width: 98%;
+    height: 35px;
+  }
+  .section1 .email-section button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0px;
+  }
+  .section2 {
+    background-image: url("./images/bg-curve-mobile.svg");
+    height: 120vh;
+  }
+  .section2 .content .card {
+    align-self: center;
+  }
+  .section2 .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section3 .content2 input {
+    width: 98%;
+    height: 35px;
+  }
+
+  .section3 button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header div.logo {
+    width: 40%;
+  }
+  header div.logo img {
+    width: 120px;
+  }
+  header div.nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav > span:nth-child(2) {
+    margin: 0 10px;
+  }
+  body {
+    text-align: center;
+  }
+  .section2 .caption {
+    text-align: left;
+  }
+  .container {
+    padding: 50px 5vw;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "stock stock" "content content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .section2 {
+    background-image: url("./images/bg-curve-mobile.svg");
+    height: 150vh;
+  }
+
+  .section3 {
+    height: 50vh;
+  }
+
+  footer {
+    height: 60vh;
+    padding: 5vh;
+  }
+
+  footer .col1 {
+    text-align: left;
+  }
+  footer .col1 div,
+  footer .col2 div,
+  footer .col3 div,
+  footer .col4 {
+    padding-bottom: 13px;
+  }
+
+  footer .col2,
+  footer .col3 {
+    align-items: flex-start;
+  }
+}
