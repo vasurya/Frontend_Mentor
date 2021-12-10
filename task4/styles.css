@@ -287,7 +287,7 @@ footer .phone {
   }
 
   .section1 {
-    height: 80vh;
+    height: 85vh;
   }
 
   .section1 .email-section {
@@ -310,7 +310,7 @@ footer .phone {
   }
   .section2 {
     background-image: url("./images/bg-curve-mobile.svg");
-    height: 120vh;
+    height: 125vh;
   }
   .section2 .content .card {
     align-self: center;
